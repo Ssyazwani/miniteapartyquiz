@@ -1,6 +1,6 @@
 body {
   font-family: 'Playfair Display', Georgia, serif;
-  background: #fffafc;
+  background: #89b2c1;
   color: #333;
   padding: 20px;
   text-align: center;
@@ -8,8 +8,8 @@ body {
 
 
 .quiz-container {
-  background: white;
-  border: 5px dashed pink;
+  background: rgb(172, 186, 211);
+  border: 5px dashed rgb(132, 172, 195);
   padding: 20px 30px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(255, 192, 203, 0.4);
@@ -19,7 +19,7 @@ body {
 }
 
 button {
-  background-color: #ffb6c1;
+  background-color: #8cb6eb;
   border: none;
   padding: 10px 20px;
   font-size: 1.2em;
@@ -29,11 +29,11 @@ button {
 }
 
 button:hover {
-  background-color: #ff69b4;
+  background-color: #85b4db;
 }
 
 .result {
   margin-top: 20px;
   font-size: 1.4em;
-  color: #d63384;
+  color: #d2dade;
 }
