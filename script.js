@@ -1,66 +1,86 @@
+const startBtn = document.getElementById('startBtn');
+const landingPage = document.getElementById('landingPage');
+const quizContent = document.getElementById('quizContent');
+
+startBtn.addEventListener('click', () => {
+  landingPage.style.display = 'none';
+  quizContent.style.display = 'block';
+
+
+});
+
+
 const questions = [
-  "How would you spend a magical afternoon in the enchanted forest?",
-  "Which of these lovely activities sounds most delightful to you?",
-  "When faced with a mysterious choice, how do you decide your path?",
-  "What magical gift do you cherish most from your heart?",
-  "What role would you play in a kingdom of dreams?"
+  "If you found a mysterious door, what would you do?",
+  "Which Wonderland place would you visit first?",
+  "What’s your favorite kind of companion?",
+  "How do you solve tricky problems?",
+  "What’s your dream adventure?"
 ];
 
 const options = [
   [
-    "Lead the royal tea party 🫖",
-    "Drift on a gentle fairy breeze 🧚‍♀️",
-    "Follow the sparkling rainbow trail 🌈",
-    "Care for all woodland creatures 🐿️"
+    "Open it bravely like Alice 🌀",
+    "Check your watch and plan carefully like The White Rabbit 🕰️",
+    "Smile mysteriously like The Cheshire Cat 🦋",
+    "Declare your rule like The Queen of Hearts 👑"
   ],
   [
-    "Host a moonlit dance under twinkling stars ✨",
-    "Curl up with a book of ancient spells 📜",
-    "Embark on a quest through mystical lands 🗺️",
-    "Tend to the village garden with love 🌷"
+    "The colorful Garden of Talking Flowers 🌸",
+    "The Mad Tea Party 🍵",
+    "The Enchanted Forest 🌳",
+    "The Queen’s Castle 🏰"
   ],
   [
-    "Listen to the wisdom of the old oak tree 🌳",
-    "Trust the whisper of your heart 💖",
-    "Imagine the grand story yet to unfold 📖",
-    "Choose what will bring joy to others 🌟"
+    "Curious friends who ask lots of questions 🌟",
+    "Punctual friends who keep you on track ⏰",
+    "Funny friends who make you laugh 😂",
+    "Loyal friends who stand up for you 💪"
   ],
   [
-    "The courage of a brave knight 🛡️",
-    "The calm of a peaceful night 🌙",
-    "The sparkle of a creative dreamer 🎨",
-    "The kindness of a gentle friend 🕊️"
+    "With creativity and imagination ✨",
+    "By staying organized and on schedule 📅",
+    "By thinking outside the box 🤔",
+    "By being assertive and confident 💥"
   ],
   [
-    "The noble leader of the court 👑",
-    "The watchful guardian of secrets 🔍",
-    "The visionary seer of futures 🔮",
-    "The loyal companion by your side 🤗"
+    "Exploring new magical worlds 🌍",
+    "Having a never-ending tea party 🍰",
+    "Solving riddles and mysteries 🕵️‍♀️",
+    "Leading a grand adventure for your friends 🏹"
   ]
 ];
 
+
 const resultMap = {
   a: {
-    name: "👸 Cinderella",
-    message: "Graceful and hopeful, you always find the light even in the darkest times."
+    name: "🌀 Alice",
+    message: "Curious and imaginative, you see the world as a place full of wonder and endless possibilities. You balance logic with creativity, embracing every unexpected twist with open arms.",
+    bgImage: "url('images/alice-bg.jpg')"
   },
   b: {
-    name: "🧙‍♂️ Merlin the Wizard",
-    message: "Wise and mysterious, you possess deep knowledge and a calm presence."
+    name: "🕰️ The White Rabbit",
+    message: "Always on the move and a bit anxious, you’re driven and punctual. Though sometimes hurried, your heart is in the right place, and you inspire others to follow their path.",
+    bgImage: "url('images/white-rabbit-bg.jpg')"
   },
   c: {
-    name: "🌹 Belle",
-    message: "Curious and kind, you see the beauty in the world and in others."
+    name: "🦋 The Cheshire Cat",
+    message: "Mysterious and witty, you have a mischievous charm and a knack for showing others new perspectives. You embrace the strange and find joy in the unexpected.",
+    bgImage: "url('images/cheshire-cat-bg.jpg')"
   },
   d: {
-    name: "🦸‍♀️ Robin Hood",
-    message: "Brave and loyal, you stand up for what’s right and help those in need."
+    name: "👑 The Queen of Hearts",
+    message: "Bold and commanding, you know what you want and aren’t afraid to go after it. Beneath your strong exterior, there’s a passionate and loyal heart.",
+    bgImage: "url('images/queen-hearts-bg.jpg')"
   },
   tie: {
-    name: "🌟 The Storybook Hero",
-    message: "A perfect blend of qualities — you are the heart of any adventure."
+    name: "🧚‍♀️ The Mad Hatter",
+    message: "Creative, whimsical, and a little unpredictable, you bring fun and energy wherever you go. Your unique outlook on life encourages others to think outside the box and celebrate their quirks.",
+    bgImage: "url('images/mad-hatter-bg.jpg')"
   }
 };
+
+
 
 
 
@@ -129,12 +149,12 @@ function showResults() {
   const max = Math.max(...Object.values(counts));
   const topLetters = Object.entries(counts).filter(([_, val]) => val === max);
 
-  const result = topLetters.length > 1
-    ? resultMap["tie"]
-    : resultMap[topLetters[0][0]];
+  const result = topLetters.length > 1 ? resultMap["tie"] : resultMap[topLetters[0][0]];
 
+  resultDiv.style.backgroundImage = result.bgImage;
   resultDiv.innerHTML = `
     <h2>${result.name}</h2>
     <p>${result.message}</p>
   `;
 }
+
