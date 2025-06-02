@@ -1,39 +1,94 @@
 body {
-  font-family: 'Playfair Display', Georgia, serif;
-  background: #89b2c1;
-  color: #333;
-  padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  background: #f8f4f1; /* soft cream */
+  color: #5a4e42; /* warm brown */
+  padding: 30px;
   text-align: center;
 }
 
-
 .quiz-container {
-  background: rgb(172, 186, 211);
-  border: 5px dashed rgb(132, 172, 195);
-  padding: 20px 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(255, 192, 203, 0.4);
-  width: 90%;
-  max-width: 500px;
- text-align: center;
+
+  background: #fff9f4; 
+  border: 3px solid #e0c3b2;
+  border-radius: 25px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 15px rgba(234, 203, 194, 0.6);
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.question-block {
+
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #e0c3b2;
+}
+
+label {
+ 
+  font-size: 1rem;
+  color: #7d5a50;
+  cursor: pointer;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #d8a7a7; /* soft rosy pink */
 }
 
 button {
-  background-color: #8cb6eb;
-  border: none;
-  padding: 10px 20px;
+  background-color: #d8a7a7; /* dusty rose */
+  border: 2px solid #c58f8f;
+  color: #fff;
+  padding: 12px 28px;
   font-size: 1.2em;
-  border-radius: 12px;
+  border-radius: 30px;
   cursor: pointer;
-  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(216, 167, 167, 0.7);
+  transition: background-color 0.3s ease;
+  
 }
 
 button:hover {
-  background-color: #85b4db;
+  background-color: #c58f8f;
+  box-shadow: 0 6px 12px rgba(197, 143, 143, 0.9);
 }
 
 .result {
-  margin-top: 20px;
-  font-size: 1.4em;
-  color: #d2dade;
+  margin-top: 25px;
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #a1635d;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #a1635d;
+  margin-bottom: 10px;
+}
+#nextBtn {
+  background-color: #d8a7a7;
+  border: 2px solid #c58f8f;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(216, 167, 167, 0.7);
+  transition: background-color 0.3s ease;
+  font-family: 'Dancing Script', cursive;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+}
+
+#nextBtn:hover {
+  background-color: #c58f8f;
+  box-shadow: 0 6px 12px rgba(197, 143, 143, 0.9);
 }
