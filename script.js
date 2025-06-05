@@ -218,9 +218,9 @@ function showResults() {
   goBtn.addEventListener('click', () => {
     const code = input.value.trim().toLowerCase();
     const specialCodes = {
-      'elna': 'elna.html',
-      'syahirah': 'syahirah.html',
-      'kirti': 'kirti.html'
+      'elna': 'pages/elna.html',
+      'syahirah': 'pages/syahirah.html',
+      'kirti': 'pages/kirti.html'
     };
 
     if (specialCodes[code]) {
