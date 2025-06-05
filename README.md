@@ -17,10 +17,10 @@ Special pages are for guests of this party specifically.
 
 ## Tech Stack
 
-- 🔹 HTML
-- 🔹 CSS
-- 🔹 JavaScript
-- 🔹 Hosted with GitHub Pages
+-  HTML
+-  CSS
+-  JavaScript
+-  Hosted with GitHub Pages
 
 No frameworks, no backend — just pure frontend fun.
 
