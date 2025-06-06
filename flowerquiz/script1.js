@@ -170,12 +170,12 @@ function showResults() {
   const key = topLetters.length > 1 ? "tie" : topLetters[0][0];
   const result = resultMap[key];
 
-  // Clear resultDiv
+ 
   resultDiv.innerHTML = '';
 
-  // Create and append image
+  
   const resultImg = document.createElement('img');
-  resultImg.src = result.bgImage;  // Just the string path, no url() here
+  resultImg.src = result.bgImage;  
   resultImg.alt = result.name;
   resultImg.style.width = '400px';
   resultImg.style.height = 'auto';
