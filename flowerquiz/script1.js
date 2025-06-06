@@ -11,90 +11,87 @@ startBtn.addEventListener('click', () => {
 
 
 const questions = [
-  "You discover a glowing magical pink door in the woods. What’s your first move?",
-  "Oh ho ho ho, Where does your fairytale journey begin?",
-  "Who do you want as a sidekick in this story?",
-  "Oh no, after a long day of work, an unfriendly and lazy colleague appeared and asked you to defeat these monsters in 2 hours. How do you tackle a challenge ?",
-  "What kind of story are you meant to live?"
+  "You stumble upon a glowing pink flower deep in the meadow — it's pulsing with magic. What do you do first?",
+  "Every blooming tale has a beginning. Where does your floral fairytale start?",
+  "A garden is always better with company. Which companion blossoms beside you on this journey?",
+  "After a long day tending the fields, a wilting vine begs for your help against fast-growing weeds. How do you handle this sudden garden crisis?",
+  "If your life were a story written in petals and stems, what kind of blooming tale would it be?"
 ];
 
 
 const options = [
- [
- 
-  "Open it with excitement and wonder, ready to see what magic awaits inside.",
-  "Check your supplies and plan carefully before stepping through, making sure you’re prepared.",
-  "Pause to think and look for hidden clues around the door, using your cleverness.",
-  "Kick the door open boldly and step through without hesitation — no time to waste!"
-],
-[
-  "In a sunlit meadow where laughter and new friends bloom.",
-  "In a busy castle where there’s always something on your to-do list.",
-  "In a shadowy library filled with secret maps and mysterious riddles.",
-  "At the edge of a wild cliff, ready to leap into the unknown."
-],
- [
-  "Cheerful companions who bring joy and curiosity to every moment.",
-  "Reliable friends who keep everything running smoothly and on time.",
-  "Witty allies who challenge your thinking and help solve puzzles.",
-  "Loyal warriors who’ll fight fiercely and stand by your side no matter what."
-],
-[
-  "Take a deep breath, make a quick plan, and tackle the monsters with a smile — bringing fun even to the toughest battles.",
-  "Push through with all your energy, working fast and focused, even if you’re running on empty.",
-  "Use your cleverness to find an unexpected way around the monsters — outsmarting the problem instead of charging in.",
-  "Say 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms."
-],
- [
-  "A bright and joyful tale full of wonder, friendship, and endless adventures.",
-  "A busy epic where hard work and determination overcome every obstacle. And a good vacation!",
-  "A clever mystery filled with twists, riddles, and surprising discoveries.",
-  "A bold legend of living free, making your own rules, and seizing every moment."
-],
-
+  // Question 1: Something Unknown
+  [
+    "Think about it, and Open  excitement and wonder, ready to see what magic awaits inside.", // Yellow
+    "Think about it and check your supplies and plan carefully before stepping through, making sure you’re prepared. You do have some days off", // Blue
+    "Think about out well craved the door is, text your friends and family about where you are going and and open the door", // Pink
+    "Not think about it and kick the door open boldly and step through without hesitation — no time to waste!" // Orange
+  ],
+  // Question 2: Where do you want to start
+  [
+    "In a sunlit meadow where laughter and new friends bloom.", // Yellow
+    "In a busy castle where there’s always something on your to-do list.", // Blue
+    "In a shadowy library filled with secret maps and mysterious riddles.", // Pink
+    "At the edge of a wild cliff, ready to leap into the unknown." // Orange
+  ],
+  // Question 3: Companion
+  [
+    "Cheerful cute bear who bring joy and curiosity to every moment.", // Yellow
+    "A calm shapeshifter owl who gives wisdom from time to time, not sure if its the right time sometimes", // Blue
+    "Our band of witches or a cute guy who is a green forest and treats me like I am royalty", // Pink
+    "Some strong warriors who’ll fight fiercely and stand by your side no matter what - cause you bribe them" // Orange
+  ],
+  // Question 4: Challenge
+  [
+    "Use the bear as a decoy and tackle the monsters with a smile — bringing fun even to the toughest battles.", // Yellow
+    "Ask the owl if he can fly us out of there or POOF teleport away using magics, its called using brains", // Blue
+    "Our band of witches who is able to outsmart them or where is my strong man who is willing to help me that is at my side?", // Pink
+    "Say 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms. Where has my warriors gone" // Orange
+  ],
+  // Question 5: Type of story do you want
+  [
+    "A bright and joyful tale full of wonder, friendships, and endless adventures.", // Yellow
+    "A tale filled with mysteries and also where hard work and determination overcome every obstacle. And a good vacation!", // Blue
+    "A easygoing and light hearted tale of how I am able to meet my true prince, with cute moments.", // Pink
+    "A bold legend of living free, making your own rules, and seizing every moment." // Orange
+  ]
 ];
+
 
 const resultMap = {
   a: {
-    name: "Happy/Sunshine",
-    message: `Curious and imaginative, you see the world as a place full of wonder and endless possibilities. 
-    You bring color into the lives of those around you, balancing logic with creativity.
-    You’re the type to find joy in small things and turn the ordinary into something magical. 
-    Wherever you go, fun and warmth follow. Never lose that spark — the world needs more of it.`,
-    bgImage: "images/sunshine.jpg"
+    name: "Yellow Flower",
+    message: `Sunshine, positivity, and joy. You're the friend who brings warmth and optimism wherever you go.
+     Full of imagination and light-hearted fun..`,
+    bgImage: "../images/sunshine.jpg"
   },
   b: {
-    name: "Overworked 24/7",
-    message: `Always on the move, a little anxious, but incredibly driven — you get things done, no matter what. 
-    Your to-do list might be longer than your patience some days, but your determination is unmatched. 
-    Even when the world feels chaotic, your heart stays in the right place. 
-    You inspire others just by showing up and pushing forward. Just don’t forget to rest — you deserve it.`,
-    bgImage: "images/overworked.jpg"
+    name: "Blue Flower",
+    message: `Calm, strategic, and quietly driven. 
+    You might feel the pressure, but your determination and depth of thought shine through even in chaos.
+    I see you, and I am here too whenever you need me`,
+    bgImage: "../images/overworked.jpg"
   },
   c: {
-    name: "Let's Get this Straight My Man",
-    message: `Mysterious, witty, and a little bit chaotic — you’re the kind of person who turns confusion into clarity with just one clever comment. 
-     You have a unique way of showing others new perspectives, sometimes without even trying. 
-     You don’t shy away from the strange — you embrace it and make it your own. 
-     And hey, if no one’s told you today: I’m proud of you. Seriously. Keep being you.`,
-    bgImage: "images/straight.jpg"
+    name: "Pink Flower",
+    message: `Trendy, witty, and effortlessly cool. 
+    You're in touch with yourself and always on top of what's new. 
+    Self-care is your thing, and you make it look easy.`,
+    bgImage: "../images/straight.jpg"
   },
   d: {
-    name: "YOLO LIVE YOUR LIFE MAN",
-   message: `You know exactly what you want and aren’t afraid to chase it. 
-   Beneath your strong exterior lies a passionate and loyal heart, 
-   always ready to stand firm for what (and who) you believe in.
-   It is your life and you have only one chance to live and you want to live it on your own terms.
-   Life won't all be easy but your got this my man, or girl, or whatever you are. Hang it there!`,
-    bgImage: "images/yolo.jpg"
+    name: "Orange Flower",
+   message: `YOLO energy! Bold, passionate, and unapologetically yourself. 
+   Life’s short — you know it, and you’re making every moment count.
+   It is your life and you have only one chance to live and you want to live it on your own terms.`,
+    bgImage: "../images/yolo.jpg"
   },
   tie: {
-    name: "You are balanced my guy",
-    message: `You got a balanced answer, congratulations! You don't really earn anything haha.
-    You are navigating life with whatever suits the situations, when you need to be positive, you need to take risks and if you are plain tired.
-    Life isn't that easy but I hope you take care of yourself and perhaps if possible, have a peace of mind from the chaos around you.
-    You might be an easy-going kinda person, so I hope everyone will be as easy-going as you, peace out! `,
-    bgImage: "images/balanced.jpg"
+    name: "Indigo Flower",
+    message: ` Balanced, adaptable, and easy-going. You are such a chill person.
+    You flow with life’s ups and downs and find peace in being grounded, 
+    no matter the chaos around you. `,
+    bgImage: "../images/balanced.jpg"
   }
 };
 
@@ -218,9 +215,10 @@ function showResults() {
   goBtn.addEventListener('click', () => {
     const code = input.value.trim().toLowerCase();
     const specialCodes = {
-      'elna': 'pages/elna.html',
-      'syahirah': 'pages/syahirah.html',
-      'kirti': 'pages/kirti.html'
+      'elna': '../pages/elna.html',
+      'syahirah': '../pages/syahirah.html',
+      'kirti': '../pages/kirti.html',
+      'special': '../pages/special.html'
     };
 
     if (specialCodes[code]) {

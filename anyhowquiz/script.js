@@ -61,7 +61,7 @@ const resultMap = {
     You bring color into the lives of those around you, balancing logic with creativity.
     You’re the type to find joy in small things and turn the ordinary into something magical. 
     Wherever you go, fun and warmth follow. Never lose that spark — the world needs more of it.`,
-    bgImage: "images/sunshine.jpg"
+    bgImage: "../images/sunshine.jpg"
   },
   b: {
     name: "Overworked 24/7",
@@ -69,7 +69,7 @@ const resultMap = {
     Your to-do list might be longer than your patience some days, but your determination is unmatched. 
     Even when the world feels chaotic, your heart stays in the right place. 
     You inspire others just by showing up and pushing forward. Just don’t forget to rest — you deserve it.`,
-    bgImage: "images/overworked.jpg"
+    bgImage: "../images/overworked.jpg"
   },
   c: {
     name: "Let's Get this Straight My Man",
@@ -77,7 +77,7 @@ const resultMap = {
      You have a unique way of showing others new perspectives, sometimes without even trying. 
      You don’t shy away from the strange — you embrace it and make it your own. 
      And hey, if no one’s told you today: I’m proud of you. Seriously. Keep being you.`,
-    bgImage: "images/straight.jpg"
+    bgImage: "../images/straight.jpg"
   },
   d: {
     name: "YOLO LIVE YOUR LIFE MAN",
@@ -86,7 +86,7 @@ const resultMap = {
    always ready to stand firm for what (and who) you believe in.
    It is your life and you have only one chance to live and you want to live it on your own terms.
    Life won't all be easy but your got this my man, or girl, or whatever you are. Hang it there!`,
-    bgImage: "images/yolo.jpg"
+    bgImage: "../images/yolo.jpg"
   },
   tie: {
     name: "You are balanced my guy",
@@ -94,7 +94,7 @@ const resultMap = {
     You are navigating life with whatever suits the situations, when you need to be positive, you need to take risks and if you are plain tired.
     Life isn't that easy but I hope you take care of yourself and perhaps if possible, have a peace of mind from the chaos around you.
     You might be an easy-going kinda person, so I hope everyone will be as easy-going as you, peace out! `,
-    bgImage: "images/balanced.jpg"
+    bgImage: "../images/balanced.jpg"
   }
 };
 
@@ -218,9 +218,10 @@ function showResults() {
   goBtn.addEventListener('click', () => {
     const code = input.value.trim().toLowerCase();
     const specialCodes = {
-      'elna': 'pages/elna.html',
-      'syahirah': 'pages/syahirah.html',
-      'kirti': 'pages/kirti.html'
+      'elna': '../pages/elna.html',
+      'syahirah': '../pages/syahirah.html',
+      'kirti': '../pages/kirti.html',
+      'special': '../pages/special.html'
     };
 
     if (specialCodes[code]) {
