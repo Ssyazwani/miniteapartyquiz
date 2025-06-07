@@ -12,9 +12,9 @@ startBtn.addEventListener('click', () => {
 
 const questions = [
   "You stumble upon a glowing pink flower deep in the meadow — it's pulsing with magic. What do you do first?",
-  "Every blooming tale has a beginning. Where does your floral fairytale start?",
+  "You want to grow and blossom into a flower but you would need a good starting point, which story intro would appear to you the most?",
   "A garden is always better with company. Which companion blossoms beside you on this journey?",
-  "After a long day tending the fields, a wilting vine begs for your help against fast-growing weeds. How do you handle this sudden garden crisis?",
+  "After a long day tending the fields, some monsters threatens to pick all your produce and flowers. How do you handle this sudden garden crisis?",
   "If your life were a story written in petals and stems, what kind of blooming tale would it be?"
 ];
 
@@ -29,10 +29,10 @@ const options = [
   ],
   // Question 2: Where do you want to start
   [
-    "In a sunlit meadow where laughter and new friends bloom.", // Yellow
-    "In a busy castle where there’s always something on your to-do list.", // Blue
-    "In a shadowy library filled with secret maps and mysterious riddles.", // Pink
-    "At the edge of a wild cliff, ready to leap into the unknown." // Orange
+    "In a homely village, where I would need to leave my home for awhile with my cute companion", // Yellow
+    "A sudden accident/tragic happen to one of your family members, so you set out to investigate", // Blue
+    "When you walked into a library and was approached by a cute guy to help you be his fake date", // Pink
+    "You overheard that there is a unknown place, with no chance of turning back but you are able to meet a new life there" // Orange
   ],
   // Question 3: Companion
   [
@@ -46,7 +46,7 @@ const options = [
     "Use the bear as a decoy and tackle the monsters with a smile — bringing fun even to the toughest battles.", // Yellow
     "Ask the owl if he can fly us out of there or POOF teleport away using magics, its called using brains", // Blue
     "Our band of witches who is able to outsmart them or where is my strong man who is willing to help me that is at my side?", // Pink
-    "Say 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms. Where has my warriors gone" // Orange
+    "Say 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms. Use a scarecrow? Where has my warriors gone" // Orange
   ],
   // Question 5: Type of story do you want
   [
@@ -63,35 +63,35 @@ const resultMap = {
     name: "Yellow Flower",
     message: `Sunshine, positivity, and joy. You're the friend who brings warmth and optimism wherever you go.
      Full of imagination and light-hearted fun..`,
-    bgImage: "../images/sunshine.jpg"
+    bgImage: "../images/yellowflower.jpg"
   },
   b: {
     name: "Blue Flower",
     message: `Calm, strategic, and quietly driven. 
     You might feel the pressure, but your determination and depth of thought shine through even in chaos.
     I see you, and I am here too whenever you need me`,
-    bgImage: "../images/overworked.jpg"
+    bgImage: "../images/blueflower.jpg"
   },
   c: {
     name: "Pink Flower",
     message: `Trendy, witty, and effortlessly cool. 
     You're in touch with yourself and always on top of what's new. 
     Self-care is your thing, and you make it look easy.`,
-    bgImage: "../images/straight.jpg"
+    bgImage: "../images/pinkflower.jpg"
   },
   d: {
     name: "Orange Flower",
    message: `YOLO energy! Bold, passionate, and unapologetically yourself. 
    Life’s short — you know it, and you’re making every moment count.
    It is your life and you have only one chance to live and you want to live it on your own terms.`,
-    bgImage: "../images/yolo.jpg"
+    bgImage: "../images/orangeflower.jpg"
   },
   tie: {
     name: "Indigo Flower",
     message: ` Balanced, adaptable, and easy-going. You are such a chill person.
     You flow with life’s ups and downs and find peace in being grounded, 
     no matter the chaos around you. `,
-    bgImage: "../images/balanced.jpg"
+    bgImage: "../images/purplflower.jpg"
   }
 };
 
