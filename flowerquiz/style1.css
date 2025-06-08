@@ -5,7 +5,7 @@ body {
   padding: 30px;
   text-align: center;
   /* Optional subtle floral pattern background */
-  background-image: url('background/flower.jpg');
+  background-image: url('../background/flowers.jpg');
   /* background-repeat: repeat; */
   /* background-size: 80px 80px; */
 }
@@ -59,7 +59,7 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(216, 167, 167, 0.7);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 button:hover {

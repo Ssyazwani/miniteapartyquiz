@@ -1,0 +1,31 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>Flower Quiz</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="quiz-container">
+
+    <div id="landingPage" class="landing-page">
+      <h1> Hey there, Pretty Flower! </h1>
+      <p>Find out what kind of flower are you to me, the creator</p>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="quizContent" style="display:none;">
+      <div id="quiz"></div>
+      <button id="nextBtn">Next</button>
+      <div id="result" class="result"></div>
+    </div>
+
+    <div id="secretCodeSection" style="display:none; margin-top: 20px;">
+      <p>Enter your secret code word for a special surprise:</p>
+      <input type="text" id="secretCodeInput" placeholder="Enter secret code here" />
+      <button id="secretSubmitBtn">Submit Code</button>
+      <p>For those who is doing this quiz and put your name and nothing was shown, use: <em>special</em></p>
+    </div>
+
+  </div>
+
+  <script src="script1.js"></script>
+</body>
