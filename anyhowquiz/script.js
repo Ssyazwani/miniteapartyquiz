@@ -11,11 +11,11 @@ startBtn.addEventListener('click', () => {
 
 
 const questions = [
-  "You discover a glowing magical pink door in the woods. What’s your first move?",
+  "A door magically appears next to you,What’s your first move?",
   "Oh ho ho ho, Where does your fairytale journey begin?",
-  "Who do you want as a sidekick in this story?",
+  "Who do you want as your companion in this story?",
   "Oh no, after a long day of work, an unfriendly and lazy colleague appeared and asked you to defeat these monsters in 2 hours. How do you tackle a challenge ?",
-  "What kind of story are you meant to live?"
+  "What is your motivation to get through life"
 ];
 
 
@@ -23,33 +23,33 @@ const options = [
  [
  
   "Open it with excitement and wonder, ready to see what magic awaits inside.",
-  "Check your supplies and plan carefully before stepping through, making sure you’re prepared.",
+  "Are you serious? I have work to do, no leaves, no",
   "Pause to think and look for hidden clues around the door, using your cleverness.",
-  "Kick the door open boldly and step through without hesitation — no time to waste!"
+  "Kick the door open boldly and step through without hesitation — LIFE IS AN ADVENTURE"
 ],
 [
-  "In a sunlit meadow where laughter and new friends bloom.",
-  "In a busy castle where there’s always something on your to-do list.",
-  "In a shadowy library filled with secret maps and mysterious riddles.",
-  "At the edge of a wild cliff, ready to leap into the unknown."
+  "At a wonderful magical world ~ overseas",
+  "At my house maybe",
+  "In a library or some public place you know",
+  "Whenever I want to since well, it's my life"
 ],
  [
-  "Cheerful companions who bring joy and curiosity to every moment.",
-  "Reliable friends who keep everything running smoothly and on time.",
-  "Witty allies who challenge your thinking and help solve puzzles.",
-  "Loyal warriors who’ll fight fiercely and stand by your side no matter what."
+  "Cheerful animals who bring joy and curiosity to every moment by singing. Need to bring some earplugs",
+  "Reliable friends,or just me,myself and I",
+  "Ayo, CHATGPT, FREE CHATGPT",
+  "Loyal warriors who’ll fight fiercely and stand by your side no matter what, in this world is mercenaries"
 ],
 [
-  "Take a deep breath, make a quick plan, and tackle the monsters with a smile — bringing fun even to the toughest battles.",
-  "Push through with all your energy, working fast and focused, even if you’re running on empty.",
-  "Use your cleverness to find an unexpected way around the monsters — outsmarting the problem instead of charging in.",
-  "Say 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms."
+  "Take a deep breath, and think, maybe the monsters would just go away soon since its time to go home",
+  "Nah man, I am done for the day, ask the monsters to come back tomorrow or something",
+  "Give him some money and whispered to him 'Can't beat them, bride them - with your money ' and take your money back and leave",
+  "If you feel like it, you kill them if not,meh good times flies fast you know"
 ],
  [
-  "A bright and joyful tale full of wonder, friendship, and endless adventures.",
-  "A busy epic where hard work and determination overcome every obstacle. And a good vacation!",
-  "A clever mystery filled with twists, riddles, and surprising discoveries.",
-  "A bold legend of living free, making your own rules, and seizing every moment."
+  "A bright future awaits all of us",
+  "A long vacation awaits all of us",
+  "A mind simulating project or my hobby awaits all of us",
+  "Your favourite food and show awaits all of us"
 ],
 
 ];
