@@ -3,7 +3,8 @@
 A little personality quiz made for a celebration
 
 Built just for fun to bring smiles, laughs, and light for my friends
-[Try it here!](https://ssyazwani.github.io/miniteapartyquiz/)
+
+[Try it here](https://ssyazwani.github.io/miniteapartyquiz/landingpage.html)
 
 There is two quizzes, both are purely for fun, enjoy!
 
