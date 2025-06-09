@@ -91,7 +91,7 @@ const resultMap = {
     message: ` Balanced, adaptable, and easy-going. You are such a chill person.
     You flow with life’s ups and downs and find peace in being grounded, 
     no matter the chaos around you. `,
-    bgImage: "../images/purplflower.jpg"
+    bgImage: "../images/purpleflower.jpg"
   }
 };
 
