@@ -12,9 +12,9 @@ startBtn.addEventListener('click', () => {
 
 const questions = [
   "You stumble upon a glowing pink flower deep in the meadow — it's pulsing with magic. What do you do first?",
-  "You want to grow and blossom into a flower but you would need a good starting point, which story intro would appear to you the most?",
+  "You want to grow and blossom into a flower but you would need a good starting point, which story intro would appeal to you the most?",
   "A garden is always better with company. Which companion blossoms beside you on this journey?",
-  "After a long day tending the fields, some monsters threatens to pick all your produce and flowers. How do you handle this sudden garden crisis?",
+  "After a long day tending the fields, some monsters threaten to pick all your produce and flowers. How do you handle this sudden garden crisis?",
   "If your life were a story written in petals and stems, what kind of blooming tale would it be?"
 ];
 
@@ -22,38 +22,38 @@ const questions = [
 const options = [
   // Question 1: Something Unknown
   [
-    "Think about it, and Open  excitement and wonder, ready to see what magic awaits inside.", // Yellow
-    "Think about it and check your supplies and plan carefully before stepping through, making sure you’re prepared. You do have some days off", // Blue
-    "Think about out well craved the door is, text your friends and family about where you are going and and open the door", // Pink
+    "Think about it, and open with excitement and wonder, ready to see what magic awaits inside.", // Yellow
+    "Think about it and check your supplies and plan carefully before stepping through, making sure you’re prepared. You do have some days off to take, or nah, this is wasting time and resources", // Blue
+    "Think about how well crafted the door is, text your friends and family about where you are going and proceed to open the door, they know where you are", // Pink
     "Not think about it and kick the door open boldly and step through without hesitation — no time to waste!" // Orange
   ],
   // Question 2: Where do you want to start
   [
-    "In a homely village, where I would need to leave my home for awhile with my cute companion", // Yellow
-    "A sudden accident/tragic happen to one of your family members, so you set out to investigate", // Blue
+    "In a homely village,where I would need to leave my home for awhile with my cute companion", // Yellow
+    "A sudden accident/tragic happen to one of your family members,so you set out to investigate what really happens, perhaps with a vengence", // Blue
     "When you walked into a library and was approached by a cute guy to help you be his fake date", // Pink
     "You overheard that there is a unknown place, with no chance of turning back but you are able to meet a new life there" // Orange
   ],
   // Question 3: Companion
   [
     "Cheerful cute bear who bring joy and curiosity to every moment.", // Yellow
-    "A calm shapeshifter owl who gives wisdom from time to time, not sure if its the right time sometimes", // Blue
-    "Our band of witches or a cute guy who is a green forest and treats me like I am royalty", // Pink
+    "A calm shapeshifter owl who gives wisdom from time to time, thought sometimes it might not be the right time", // Blue
+    "A mighty band of witches or a cute guy who is described green-forest and treats you like you are royalty", // Pink
     "Some strong warriors who’ll fight fiercely and stand by your side no matter what - cause you bribe them" // Orange
   ],
   // Question 4: Challenge
   [
     "Use the bear as a decoy and tackle the monsters with a smile — bringing fun even to the toughest battles.", // Yellow
     "Ask the owl if he can fly us out of there or POOF teleport away using magics, its called using brains", // Blue
-    "Our band of witches who is able to outsmart them or where is my strong man who is willing to help me that is at my side?", // Pink
-    "Say 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms. Use a scarecrow? Where has my warriors gone" // Orange
+    "The band of witches who is able to outsmart them or where is your strong man, he should be here rescueing you or at least helping you as a decoy", // Pink
+    "Screaming 'Let’s do this!' and face the monsters head-on, no matter how tired you are — because you live life on your own terms. Use a scarecrow? Where has my warriors gone" // Orange
   ],
   // Question 5: Type of story do you want
   [
-    "A bright and joyful tale full of wonder, friendships, and endless adventures.", // Yellow
-    "A tale filled with mysteries and also where hard work and determination overcome every obstacle. And a good vacation!", // Blue
-    "A easygoing and light hearted tale of how I am able to meet my true prince, with cute moments.", // Pink
-    "A bold legend of living free, making your own rules, and seizing every moment." // Orange
+    "A heartwarming tale full of wonder, friendships, and endless adventures - of course going back to home time to time", // Yellow
+    "A tale filled with episodic mysteries and the classic 'I know who did it' for every case you stumbled upon. And a good vacation, hopefully not murder cases comes up along, cant be like Detective Conan hah!", // Blue
+    "A romantic tale of how I am able to meet my true prince, with very cute moments hehe or maybe a love triangle, ooh ooh.", // Pink
+    "A bold legend of living free, making your own rules, and seizing every moment where I am happy each day" // Orange
   ]
 ];
 
@@ -61,20 +61,20 @@ const options = [
 const resultMap = {
   a: {
     name: "Yellow Flower",
-    message: `Sunshine, positivity, and joy. You're the friend who brings warmth and optimism wherever you go.
+    message: ` You emit sunshine vibes, positivity, and joy. You're the friend who brings warmth and optimism wherever you go.
      Full of imagination and light-hearted fun..`,
     bgImage: "../images/yellowflower.jpg"
   },
   b: {
     name: "Blue Flower",
-    message: `Calm, strategic, and quietly driven. 
+    message: ` You emit calm, strategic, and quietly driven. 
     You might feel the pressure, but your determination and depth of thought shine through even in chaos.
     I see you, and I am here too whenever you need me`,
     bgImage: "../images/blueflower.jpg"
   },
   c: {
     name: "Pink Flower",
-    message: `Trendy, witty, and effortlessly cool. 
+    message: `You are rendy, witty, and effortlessly cool. 
     You're in touch with yourself and always on top of what's new. 
     Self-care is your thing, and you make it look easy.`,
     bgImage: "../images/pinkflower.jpg"
@@ -88,11 +88,11 @@ const resultMap = {
   },
   tie: {
     name: "Indigo Flower",
-    message: ` Balanced, adaptable, and easy-going. You are such a chill person.
+    message: ` You are balanced, adaptable, and easy-going. You are such a chill person.
     You flow with life’s ups and downs and find peace in being grounded, 
     no matter the chaos around you. `,
     bgImage: "../images/purpleflower.jpg"
-  }
+  },
 };
 
 
