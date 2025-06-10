@@ -11,10 +11,10 @@ startBtn.addEventListener('click', () => {
 
 
 const questions = [
-  "A door magically appears next to you,What’s your first move?",
+  "There is a door that appears out of nowhere, what are you going to do about it?",
   "Oh ho ho ho, Where does your fairytale journey begin?",
   "Who do you want as your companion in this story?",
-  "Oh no, after a long day of work, an unfriendly and lazy colleague appeared and asked you to defeat these monsters in 2 hours. How do you tackle a challenge ?",
+  "Oh no, after a long day of work, an unfriendly and lazy colleague appeared and asked you for help to clear some of her work since her deadline is approaching fasr. How do you tackle a challenge ?",
   "What is your motivation to get through life"
 ];
 
@@ -22,9 +22,9 @@ const questions = [
 const options = [
  [
  
-  "Open it with excitement and wonder, ready to see what magic awaits inside.",
+  "Cautious opened it with a small prayer, it cant be that bad",
   "Are you serious? I have work to do, no leaves, no",
-  "Pause to think and look for hidden clues around the door, using your cleverness.",
+  "Pause to think and look for hidden clues around the door, using your cleverness. Nah, call the police now",
   "Kick the door open boldly and step through without hesitation — LIFE IS AN ADVENTURE"
 ],
 [
@@ -34,22 +34,22 @@ const options = [
   "Whenever I want to since well, it's my life"
 ],
  [
-  "Cheerful animals who bring joy and curiosity to every moment by singing. Need to bring some earplugs",
-  "Reliable friends,or just me,myself and I",
-  "Ayo, CHATGPT, FREE CHATGPT",
-  "Loyal warriors who’ll fight fiercely and stand by your side no matter what, in this world is mercenaries"
+  "Cheerful animals who bring joy and curiosity to every moment by singing. Note: To bring some earplugs along",
+  "Just me, myself and I",
+  "FREE CHATGPT, the power of technology nowadays is amazing you know",
+  "Loyal warriors who’ll fight fiercely and stand by your side no matter what, in this world, they are called mercenaries"
 ],
 [
-  "Take a deep breath, and think, maybe the monsters would just go away soon since its time to go home",
-  "Nah man, I am done for the day, ask the monsters to come back tomorrow or something",
-  "Give him some money and whispered to him 'Can't beat them, bride them - with your money ' and take your money back and leave",
-  "If you feel like it, you kill them if not,meh good times flies fast you know"
+  "Take a deep breath, and think, maybe the work would just go away soon since its time to go home",
+  "Nah man, I am done for the day, ask her to ask again tomorrow or something",
+  "Whispered to him 'Can't beat them, bride them - with your money'  and leave",
+  "If you feel like it, you would help them, and then if not, well meh, yea you dont feel like it, but good luck to the person"
 ],
  [
   "A bright future awaits all of us",
   "A long vacation awaits all of us",
-  "A mind simulating project or my hobby awaits all of us",
-  "Your favourite food and show awaits all of us"
+  "A mind-simulating project or your hobby awaits all of us",
+  "Spending time with your favourite food and show at home awaits all of us"
 ],
 
 ];
